@@ -1,0 +1,14 @@
+{
+  "name": "speedTestV1",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run setup:server",
+    "setup:app": "npm run setup:server && npm run setup:client",
+    "setup:client": "cd speedTestV1.client && npm i",
+    "setup:server": "cd speedTestV1 && npm i",
+    "start": "node speedTestV1/index.js"
+  },
+  "engines": {
+    "node": "^18.12.1"
+  }
+}
